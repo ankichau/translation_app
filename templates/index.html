@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<body>
+  <h1>Input the text that you want to translate.</h1>
+  <form method="post" enctype=multipart/form-data>
+    Enter the Source Language
+    <br>
+    English<input type='checkbox' name='option' value='en' />
+    Spanish<input type='checkbox' name='option' value='es' />
+    Japan<input type='checkbox' name='option' value='ja' />
+    Russia<input type='checkbox' name='option' value='ru' />
+    Hindi<input type='checkbox' name='option' value='hi' />
+    <br>
+    <br>
+    Source Text<input type='text' name='user_text' />
+    <br>
+    <br>
+    Enter the Destination Language
+    <br>
+    English<input type='checkbox' name='my_checkbox' value='en' />
+    Spanish<input type='checkbox' name='my_checkbox' value='es' />
+    Japan<input type='checkbox' name='my_checkbox' value='ja' />
+    Russia<input type='checkbox' name='my_checkbox' value='ru' />
+    Hindi<input type='checkbox' name='my_checkbox' value='hi' />
+    <br>
+    <input type="submit" />
+    <h2>The Source Text is: {{ source_text }}</h2>
+    <h2>The Translated Text is: {{ translated_text }} </h2>
+  </form>
+</bod>
